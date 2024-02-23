@@ -27,7 +27,15 @@ class Grid extends Component<Partial<Config>, any> {
   }
 
   componentDidUpdate(): void {
-    this.instance.updateConfig(this.props).forceRender();
+    Promise.resolve(this.instance.config.plugin.remove("pagination")).then(
+      () => {
+        Promise.resolve(this.instance.config.plugin.remove("search")).then(
+          () => {
+            this.instance.updateConfig(this.props).forceRender();
+          }
+        );
+      }
+    );
   }
 
   render(): React.ReactElement {
