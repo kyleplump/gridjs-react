@@ -1,21 +1,12 @@
 {
   "name": "gridjs-react",
-  "version": "6.1.1",
+  "version": "6.1.2",
   "description": "React component for Grid.js",
   "main": "dist/gridjs.production.min.js",
   "module": "dist/gridjs.production.es.min.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist/*"
-  ],
-  "keywords": [
-    "gridjs",
-    "table",
-    "react",
-    "sort",
-    "pagination",
-    "grid"
-  ],
+  "files": ["dist/*"],
+  "keywords": ["gridjs", "table", "react", "sort", "pagination", "grid"],
   "author": "Afshin Mehrabani <afshin.meh@gmail.com>",
   "homepage": "https://gridjs.io",
   "repository": "https://github.com/grid-js/gridjs-react",
